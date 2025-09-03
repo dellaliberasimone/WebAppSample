@@ -1,0 +1,9 @@
+# Only exclude what you don't need, rather than excluding everything
+bin/Debug/
+bin/x64/
+bin/x86/
+obj/Debug/
+*.user
+*.suo
+.vs/
+packages/

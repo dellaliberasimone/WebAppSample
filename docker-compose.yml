@@ -1,0 +1,20 @@
+
+
+# Services section - defines the containers to run
+services:
+  # Service name - you can reference this service by this name
+  webapp:
+    # Docker image to use - pulling from your specified container registry
+    image: applocale:10
+    
+    # Container name - optional, sets a custom name for the container
+    container_name: sampleapp-web
+    
+    # Port mapping - maps host port to container port (host:container)
+    ports:
+      - "8888:80"    # HTTP traffic
+      - "8443:443"   # HTTPS traffic
+    
+    # Restart policy - controls when the container should restart
+    restart: unless-stopped
+   
